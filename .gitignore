@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+# dataset/
 build/
 develop-eggs/
 dist/
@@ -28,6 +29,7 @@ share/python-wheels/
 MANIFEST
 turcy/.idea/
 .idea/
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

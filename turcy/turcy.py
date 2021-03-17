@@ -2,25 +2,16 @@ import os
 import logging
 import typing
 import spacy
-from spacy.tokens import Span, Doc
+from spacy.tokens import Doc, Span, Token
 from turcy.tree_dep_pattern import attach_triple2sentence
+from spacy.language import Language
 
 logging.basicConfig(level=logging.INFO)
 
 Doc.set_extension('triples', default=[], force=True)
 Span.set_extension('triples', default=[], force=True)
-
-# turcy Class takes text,
-
-def extract(text:str, nlp):
-    nlp = spacy.load("de_core_news_lg")
-    lemma_lookup = nlp.vocab.lookups.get_table("lemma_lookup")
-    lemma_lookup["Amtskollegen"] = "Amtskollege"
-    lemma_lookup["Kanzlerin"] = "Kanzler"
-
+Token.set_extension('part', default=None, force=True)
+Token.set_extension('posi', default=None, force=True)
 
 def add_to_pipe(nlp):
-    lemma_lookup = nlp.vocab.lookups.get_table("lemma_lookup")
-    lemma_lookup["Amtskollegen"] = "Amtskollege"
-    lemma_lookup["Kanzlerin"] = "Kanzler"
-    nlp.add_pipe(attach_triple2sentence, last=True)
+    nlp.add_pipe("attach_triple2sentence", last=True)
