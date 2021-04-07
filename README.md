@@ -32,9 +32,12 @@ For building patterns, a `pattern_builder module is available.
 ## How it works 
 
 ### 1. Building a Pattern 
-``
+
 Given the sentence: `Quers ist eine Gemeinde im französischen Département Haute-Saône in der Region Bourgogne-Franche-Comté.` 
-a hierarchy (or tree) of words given the dependency parse can be derived. ![Word Tree](satz1_text.png) 
+a hierarchy (or tree) of words given the dependency parse can be derived:
+
+![Word Tree](satz1_text.png) 
+
 The previous shown hierarchy (tree) can be replaced by using a tokens POS-tags as Nodes and the dependencies as relation between tokens. 
 The extracted from new tree sentence can be depicted as:
 
