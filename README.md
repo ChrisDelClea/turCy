@@ -74,92 +74,9 @@ Each pattern reflects a Node (POS-tag = tag_) and one relation (if existing, dep
             {
                 "tag_": "NN",
                 "dep_": "pd",
-                "lefts": [
-                    {
-                        "tag_": "ART",
-                        "dep_": "nk",
-                        "lefts": [],
-                        "rights": [],
-                        "name": null,
-                        "keep": false,
-                        "appendOrder": "inOrder",
-                        "part": null,
-                        "posi": null,
-                        "subj": null,
-                        "pred": null,
-                        "obj": null,
-                        "complete": null,
-                        "truth": 0
-                    }
-                ],
+                "lefts": [],
                 "rights": [
-                    {
-                        "tag_": "APPRART",
-                        "dep_": "mnr",
-                        "lefts": [],
-                        "rights": [
-                            {
-                                "tag_": "NN",
-                                "dep_": "nk",
-                                "lefts": [
-                                    {
-                                        "tag_": "ADJA",
-                                        "dep_": "nk",
-                                        "lefts": [],
-                                        "rights": [],
-                                        "name": null,
-                                        "keep": false,
-                                        "appendOrder": "inOrder",
-                                        "part": null,
-                                        "posi": null,
-                                        "subj": null,
-                                        "pred": null,
-                                        "obj": null,
-                                        "complete": null,
-                                        "truth": 0
-                                    }
-                                ],
-                                "rights": [
-                                    {
-                                        "tag_": "NE",
-                                        "dep_": "nk",
-                                        "lefts": [],
-                                        "rights": [],
-                                        "name": null,
-                                        "keep": false,
-                                        "appendOrder": "inOrder",
-                                        "part": null,
-                                        "posi": null,
-                                        "subj": null,
-                                        "pred": null,
-                                        "obj": null,
-                                        "complete": null,
-                                        "truth": 0
-                                    }
-                                ],
-                                "name": null,
-                                "keep": false,
-                                "appendOrder": "inOrder",
-                                "part": null,
-                                "posi": null,
-                                "subj": null,
-                                "pred": null,
-                                "obj": null,
-                                "complete": null,
-                                "truth": 0
-                            }
-                        ],
-                        "name": null,
-                        "keep": false,
-                        "appendOrder": "inOrder",
-                        "part": null,
-                        "posi": null,
-                        "subj": null,
-                        "pred": null,
-                        "obj": null,
-                        "complete": null,
-                        "truth": 0
-                    },
+                    {},
                     {
                         "tag_": "APPR",
                         "dep_": "mnr",
@@ -168,24 +85,7 @@ Each pattern reflects a Node (POS-tag = tag_) and one relation (if existing, dep
                             {
                                 "tag_": "NN",
                                 "dep_": "nk",
-                                "lefts": [
-                                    {
-                                        "tag_": "ART",
-                                        "dep_": "nk",
-                                        "lefts": [],
-                                        "rights": [],
-                                        "name": null,
-                                        "keep": false,
-                                        "appendOrder": "inOrder",
-                                        "part": null,
-                                        "posi": null,
-                                        "subj": null,
-                                        "pred": null,
-                                        "obj": null,
-                                        "complete": null,
-                                        "truth": 0
-                                    }
-                                ],
+                                "lefts": [{}],
                                 "rights": [
                                     {
                                         "tag_": "NE",
@@ -215,46 +115,13 @@ Each pattern reflects a Node (POS-tag = tag_) and one relation (if existing, dep
                                 "complete": null,
                                 "truth": 0
                             }
-                        ],
-                        "name": null,
-                        "keep": false,
-                        "appendOrder": "inOrder",
-                        "part": null,
-                        "posi": null,
-                        "subj": null,
-                        "pred": null,
-                        "obj": null,
-                        "complete": null,
-                        "truth": 0
+                        ], 
+                      ...
                     }
                 ],
-                "name": null,
-                "keep": false,
-                "appendOrder": "inOrder",
-                "part": null,
-                "posi": null,
-                "subj": null,
-                "pred": null,
-                "obj": null,
-                "complete": null,
-                "truth": 0
+              ...
             },
-            {
-                "tag_": "$.",
-                "dep_": "punct",
-                "lefts": [],
-                "rights": [],
-                "name": null,
-                "keep": false,
-                "appendOrder": "inOrder",
-                "part": null,
-                "posi": null,
-                "subj": null,
-                "pred": null,
-                "obj": null,
-                "complete": null,
-                "truth": 0
-            }
+            {}
         ],
         "name": "Q738574_0",
         "keep": false,
