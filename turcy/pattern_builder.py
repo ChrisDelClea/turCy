@@ -94,7 +94,7 @@ def doc_length(doc):
     length = len([token for token in doc])
     return length
 
-nlp = spacy.load('de_core_news_lg')
+nlp = spacy.load('de_core_news_sm') # de_core_news_lg
 
 def find(sent, triple, key=""):
     count = 0
@@ -119,9 +119,9 @@ def find(sent, triple, key=""):
     loopTree(pattern, pattern)
     return pattern
 
-def add(pattern):
+def add(pattern, pattern_list):
     if len(pattern) > 0:
-        with importlib.resources.path("turcy", "patterns.jsonl") as outfile:
+        with importlib.resources.path("turcy", f"patterns_{pattern_list}.jsonl") as outfile:
             with open(str(outfile), 'a', encoding="utf8") as out_f:
                     json.dump(pattern, out_f)
                     out_f.write('\n') #.write('\n')

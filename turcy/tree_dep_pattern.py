@@ -213,10 +213,10 @@ def reassemble(tripleList):
         return None
 
 @Language.component('attach_triple2sentence')
-def attach_triple2sentence(doc):
+def attach_triple2sentence(doc, pattern_list="small"):
     """ Goes through all patterns and sentences and tries to derive triples if there are some.  """
     work_dir = os.path.dirname(os.path.realpath(__file__))
-    file_dir = os.path.join(work_dir, "patterns.jsonl")
+    file_dir = os.path.join(work_dir, f"patterns_{pattern_list}.jsonl")
     patternList = pattern_loader(path_to_rules=file_dir)
 
     for sent in doc.sents:
