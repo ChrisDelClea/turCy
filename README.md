@@ -62,4 +62,3 @@ For building patterns, a `pattern_builder module is available.
 ![img_6.png](img_6.png)
 
 # References
-
