@@ -94,7 +94,7 @@ def doc_length(doc):
     length = len([token for token in doc])
     return length
 
-nlp = spacy.load('de_core_news_sm') # de_core_news_lg
+nlp = spacy.load('de_core_news_lg')
 
 def find(sent, triple, key=""):
     count = 0
