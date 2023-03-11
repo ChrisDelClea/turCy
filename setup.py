@@ -18,9 +18,9 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     data_files=[('', ['turcy/patterns_small.jsonl', 'turcy/patterns_large.jsonl'])],
     install_requires=[
-           'numpy>=1.19.4',
+           'numpy==1.19.4',
            'pandas==1.2.0',
-           'spacy>=3.0.1'
+           'spacy==3.0.1'
     ],
     include_package_data=True,
     keywords="openie turcy information extraction spacy",

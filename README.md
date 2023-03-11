@@ -5,6 +5,8 @@ An Open Information Extraction System  mainly designed for German.
 ### Installation
 ```python
 pip install turcy
+
+python -m spacy download de_core_news_lg-3.0.0 --direct
 ```
 
 [comment]: <> (### Usage)
