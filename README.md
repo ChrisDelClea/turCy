@@ -45,6 +45,7 @@ For building patterns, a `pattern_builder module is available.
 
 ### 1. Building a Pattern 
 
+
 ![img_2.png](img_2.png)
 
 ![img_1.png](img_1.png)
@@ -52,7 +53,24 @@ For building patterns, a `pattern_builder module is available.
 
 ### 2. Extraction 
 
-![img_4.png](img_4.png)
+1. Load the German Language Model from spaCy.
+2. Add turCy to the nlp-Pipeline.
+3. Pass the document to the pipeline.
+4. Iterate over the sentences in the document and access the triples in each sentence.
+
+```python
+def example():
+    nlp = spacy.load("de_core_news_lg", exclude=["ner"])
+    nlp.max_length = 2096700
+    turcy.add_to_pipe(nlp)  # apply/use current patterns in list
+    pipeline_params = {"attach_triple2sentence": {"pattern_list": "small"}}
+    doc = nlp("Nürnberg ist eine Stadt in Deutschland.", component_cfg=pipeline_params)
+    for sent in doc.sents:
+        print(sent)
+        for triple in sent._.triples:
+            (subj, pred, obj) = triple["triple"]
+            print(f"subject:'{subj}', predicate:'{pred}' and object: '{obj}'")
+```
 
 
 ### 3. Results 
